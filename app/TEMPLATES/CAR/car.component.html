@@ -1,0 +1,8 @@
+<div *ngIf="car">
+
+    <strong> {{car.make}} {{car.model}}</strong> - {{car.horsePower}} hp
+   <button (click)="removeCar(car)">Remove</button>
+   <br/>
+
+    <img [src]="car.thumbUrl" (click)="showDetails(car);" />
+</div>

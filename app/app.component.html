@@ -1,0 +1,11 @@
+<h1>My Car Collection</h1>
+<button (click)="addNewCar();">Add Car</button>
+<car-detail *ngIf="selectedCar" [selectedCar]="selectedCar"  ></car-detail>
+<div>
+    <car *ngFor="#car of carCollection" 
+        [car]="car"
+        (onCarRemoved)="removeCar($event)"
+        (onCarSelected)="showDetails($event)" ></car>
+</div>
+    
+    

@@ -1,0 +1,9 @@
+div {
+    display: inline-block;
+    margin: 5px;
+}
+
+img {
+    width: 300;
+    height: 180;
+}
